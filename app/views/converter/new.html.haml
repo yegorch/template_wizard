@@ -1,0 +1,7 @@
+%h1 Convert ERB to HAML
+= form_with url: '/convert', local: true, multipart: true do |form|
+  .field
+    = form.label :file, "Upload ERB File"
+    = form.file_field :file
+  .actions
+    = form.submit "Convert"
